@@ -1,0 +1,78 @@
+#!bin/bash
+*if we use #before  line the line will not execute.
+*if we want to commentout the multiplr lines we use << with any name before lines and end with thne name afterlines as follows
+
+<< vishnu
+ -------------------------
+ ------------------------
+ ---------------------------
+ 
+vishnu
+ 
+#defining a variable
+x=45
+y=36
+z=26
+1)print a variable value
+echo "$x"
+echo "$y"
+echo "$z"
+2)print a variable value in another way
+echo $x
+echo $y
+echo $z
+echo "The value of x is: $x"
+
+#if we want to print multiple outputs in a single line then we use
+echo "The value of x is: $x The value of y is: $y The value of p is: $p The value of q is: $q"
+
+#if we want to print multiple outputs in a multiple lines then we use
+echo -e "The value of x is: $x \nThe value of y is: $y \nThe value of p is: $p \nThe value of q is: $q"
+
+3)But not like this
+echo '$x'
+echo '$y'
+echo '$z'
+
+
+
+4)definding a variable like this only i.e no spaces b/w before and after '='
+x=45
+5)don't define like this
+x= 45
+x =45
+x = 45
+
+
+6)#!bin/bassh
+x=45
+echo "$x"
+echo "$z"
+z=30
+echo "$z"
+
+
+ouput"
+45
+
+30
+Note: in this scinario only x value will print first.it will print z value.why because we define only x value  only not z value before 3rd line(i.e 34line in this file)
+so it will print an empty value like above
+after that it will print z value.
+
+**Important:by default in shell scriptinging if variable is not available than it is an empty value.
+
+*suppose i want to store msg or text or string we can store like this.
+myname=vishnu  valid
+myname=vishnu vardhan invalid(don't use space between two strings) we can write like this
+myname="vishnu vardhan"
+Z="shell scripting"
+echo "$Z"
+echo "${Z}" this is also valid
+
+Rules to define variable names:
+1)The name of a variable can contain letters(a to z  A to Z), numbers(0 to 9) and underscore character(_). But we should not start variable with number
+ex:1x=10 invalid
+
+2)Further, a variable name can only start with an underscore.
+3)Don't include a space in a varaible name.
