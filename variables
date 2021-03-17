@@ -76,3 +76,6 @@ ex:1x=10 invalid
 
 2)Further, a variable name can only start with an underscore.
 3)Don't include a space in a varaible name.
+ex:my name ="vishnu vardhan" invalid
+   myname="vishnu vardhanu"   valid
+   my_name="vishnu vardhanu"  valid
